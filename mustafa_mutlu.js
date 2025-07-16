@@ -37,13 +37,12 @@
         if (heroSection) heroSection.insertAdjacentHTML('afterend', html);
     };
 
-  const buildCSS = () => {
+    const buildCSS = () => {
         const css = `
             .main-carousel-wrapper {
                 width: 100%;
                 max-width: 1350px;
                 margin: 20px auto;
-                padding: 0;
                 position: relative;
                 font-family: system-ui, -apple-system, sans-serif;
             }
@@ -52,7 +51,6 @@
                 background: #fef6eb;
                 padding: 20px;
                 border-radius: 20px 20px 0 0;
-                margin-bottom: 0;
             }
             
             .carousel-header-title {
@@ -60,7 +58,6 @@
                 font-size: 24px;
                 font-weight: 600;
                 margin: 0;
-                text-align: left;
             }
             
             .carousel-body-area {
@@ -73,7 +70,6 @@
             
             .carousel-container {
                 overflow: hidden;
-                position: relative;
             }
             
             .carousel-track {
@@ -117,18 +113,13 @@
             .product-link {
                 text-decoration: none;
                 color: inherit;
-                display: block;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
+                height: 100%;
             }
             
             .product-image-container {
-                position: relative;
-                width: 100%;
                 height: 220px;
-                overflow: hidden;
-                background: #fff;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -139,7 +130,6 @@
                 max-width: 100%;
                 max-height: 100%;
                 object-fit: contain;
-                display: block;
             }
             
             .favorite-button {
@@ -149,6 +139,7 @@
                 width: 45px;
                 height: 45px;
                 background: white;
+                border: 1px solid transparent;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
@@ -156,12 +147,11 @@
                 cursor: pointer;
                 box-shadow: 0 2px 6px rgba(0,0,0,0.1);
                 z-index: 10;
-                transition: border 0.2s ease;
-                border: 1px solid transparent;
+                transition: border 0.2s;
             }
             
             .favorite-button:hover {
-                border: 1px solid #f28e00;
+                border-color: #f28e00;
             }
             
             .favorite-button svg {
@@ -174,7 +164,6 @@
             
             .favorite-button.favorited svg {
                 fill: #f28e00;
-                stroke: #f28e00;
             }
             
             .product-info {
@@ -182,7 +171,6 @@
                 flex: 1;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-start;
                 height: 300px;
             }
             
@@ -190,9 +178,7 @@
                 margin-bottom: 15px;
                 min-height: 65px;
                 max-height: 65px;
-                display: block;
                 line-height: 1.4;
-                position: relative;
                 padding-bottom: 8px;
                 overflow: hidden;
             }
@@ -201,14 +187,11 @@
                 color: #333;
                 font-size: 15px;
                 font-weight: 600;
-                display: inline;
             }
             
             .product-name {
                 color: #555;
                 font-size: 14px;
-                font-weight: 400;
-                display: inline;
             }
             
             .product-rating {
@@ -239,7 +222,6 @@
                 color: #777;
                 font-size: 13px;
                 margin: 0;
-                font-weight: 400;
             }
             
             .product-price-container {
@@ -264,7 +246,6 @@
                 color: #999;
                 font-size: 15px;
                 text-decoration: line-through;
-                font-weight: 400;
             }
             
             .price-discount-percent {
@@ -296,7 +277,7 @@
                 font-size: 15px;
                 font-weight: 600;
                 cursor: pointer;
-                transition: all 0.2s ease;
+                transition: all 0.2s;
             }
             
             .add-to-cart:hover {
@@ -320,24 +301,13 @@
                 font-size: 18px;
                 color: #f28e00;
                 z-index: 10;
-                transition: all 0.3s ease;
+                transition: all 0.3s;
                 outline: none;
             }
             
             .carousel-control-btn:hover {
-                background-color: #fff;
-                border: 1px solid #f28e00;
-            }
-            
-            .arrow-icon {
-                display: inline-block;
-                font-size: 18px;
-                font-weight: 300;
-                line-height: 1;
-                margin: 0;
-                border-radius: 4px;
-                filter: blur(0.3px);
-                font-family: Arial, sans-serif;
+                background: #fff;
+                border-color: #f28e00;
             }
             
             .carousel-prev-btn {
