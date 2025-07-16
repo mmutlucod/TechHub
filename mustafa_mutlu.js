@@ -28,8 +28,8 @@
                         <div class="carousel-track" id="carouselTrack"></div>
                     </div>
                 </div>
-                <button class="carousel-control-btn carousel-prev-btn"</button>
-                <button class="carousel-control-btn carousel-next-btn" </button>
+                <button class="carousel-control-btn carousel-prev-btn" aria-label="Önceki">&#10094;</button>
+                <button class="carousel-control-btn carousel-next-btn" aria-label="Sonraki">&#10095;</button>
             </div>
         `;
         
